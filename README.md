@@ -16,6 +16,8 @@ Saving animation frames to flash memory or RAM for oled's is costly and limits t
 
 **Warning** this may take more memory in flash based on the nature of the animation, lots of changes per frame = more changes to store in flash. Worst case scenario would be frames that flash completely black or white. 
 
+This will provide the C code to paste into QMK .C firmware, keymap.c or <name of keyboard>.c
+
 ### Example usage:  
 
 ```python  oled_animation_to_c.py <directory w/ images named in sequence>```
