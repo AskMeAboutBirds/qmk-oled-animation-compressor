@@ -17,6 +17,8 @@ Saving animation frames to flash memory or RAM for oled's is costly and limits t
 **Warning** this may take more memory in flash based on the nature of the animation, lots of changes per frame = more changes to store in flash. Worst case scenario would be frames that flash completely black or white. 
 
 This will provide the C code to paste into QMK .C firmware, keymap.c or <name of keyboard>.c
+  
+The code is called via change_frame_bytewise(frame_number), note if you change frames out of order it will break the animation, as it only updates the bites from frame -i to frame i.
 
 ### Example usage:  
 
