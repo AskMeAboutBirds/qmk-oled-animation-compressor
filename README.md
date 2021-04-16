@@ -22,7 +22,7 @@ The code is called via change_frame_bytewise(frame_number), note if you change f
 
 ### Example usage:  
 
-```python  oled_animation_to_c.py <directory w/ images named in sequence>```
+```python  oled_animation_to_c.py <directory w/ images named in sequence or .gif>```
 
 ### Arguments:
 
@@ -32,3 +32,14 @@ The code is called via change_frame_bytewise(frame_number), note if you change f
 --orientation <'vertical'/'horizontal'> orientation formatting of the oled, default is 'vertical'
 
 ```
+
+
+## Dependancies and Tools:
+
+PIL - https://pillow.readthedocs.io/en/stable/
+Numpy - https://numpy.org/doc/stable/
+
+## Credit to image to byte array code:
+
+Image2cpp: https://javl.github.io/image2cpp/
+
