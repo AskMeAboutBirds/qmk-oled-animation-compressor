@@ -3,7 +3,7 @@ A short python script to compress .gif or image directories into looping C code 
 
 **Warning!**
 
-This will just give the C code for a looping animation. Code was made for an Elite C controller for QMK firmware and a 32x128 OLED.
+This will just give the C code for a looping animation. Code was made for an Elite C controller for QMK firmware and a 32x128 OLED. Currently vertical encoding only
 
 ### Purpose: 
 
@@ -29,7 +29,7 @@ The code is called via change_frame_bytewise(frame_number), note if you change f
 ```
 --to-file <boolean> save the output to a textfile, default is false
 --output-fname <string> output filename , default is oled_anim_outc.txt
---orientation <'vertical'/'horizontal'> orientation formatting of the oled, default is 'vertical'
+--orientation <'vertical'/'horizontal'> orientation formatting of the oled, default is 'vertical'  **Currently only works with vertical**
 
 ```
 
