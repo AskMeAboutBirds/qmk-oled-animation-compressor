@@ -62,13 +62,14 @@ Numpy - https://numpy.org/doc/stable/
 ## Credits
 
 Image2cpp: https://javl.github.io/image2cpp/ for the conversions from np uint8 to byte arrays
+
 Kyria https://github.com/qmk/qmk_firmware/blob/master/keyboards/kyria/keymaps/j-inc/keymap.c
-for an idea of how to set up an animationin for a qmk keymap
+for an idea of how to set up an animation for a qmk keymap
 
 
 
 
-## full example for moon.gif
+## Full example for moon.gif
 
 Input:
 ```
