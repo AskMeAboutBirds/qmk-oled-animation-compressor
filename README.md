@@ -39,9 +39,12 @@ The code is called via change_frame_bytewise(frame_number), note if you change f
 PIL - https://pillow.readthedocs.io/en/stable/
 Numpy - https://numpy.org/doc/stable/
 
-## Credit to image to byte array code:
+## Credits
 
-Image2cpp: https://javl.github.io/image2cpp/
+Image2cpp: https://javl.github.io/image2cpp/ for the conversions from np uint8 to byte arrays
+Kyria https://github.com/qmk/qmk_firmware/blob/master/keyboards/kyria/keymaps/j-inc/keymap.c
+for an idea of how to set up an animationin for a qmk keymap
+
 
 
 
