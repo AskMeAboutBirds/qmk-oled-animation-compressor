@@ -49,7 +49,7 @@ Image2cpp: https://javl.github.io/image2cpp/
 
 Input:
 ```
-python ./moon.gif --to-file=True
+python oled_animation_to_c.py ./moon.gif --to-file=True
 ```
 Output:
 ```
