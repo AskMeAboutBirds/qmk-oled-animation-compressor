@@ -18,7 +18,27 @@ Saving animation frames to flash memory or RAM for oled's is costly and limits t
 
 This will provide the C code to paste into QMK .C firmware, keymap.c or <name of keyboard>.c
   
-The code is called via change_frame_bytewise(frame_number), note if you change frames out of order it will break the animation, as it only updates the bites from frame -i to frame i.
+The code is called via change_frame_bytewise(frame_number), note if you change frames out of order it will break the animation, as it only updates the bites from frame -i to frame i. You must also write the base frame just once somewhere, with the following:
+
+```
+oled_write_raw_P( frame, ANIM_SIZE);
+```
+I recommend defining a boolean to simply only render it once.
+
+```
+bool first_render = 1;
+
+static void render_anim(void) {
+	void render_first(void){
+		oled_write_raw_P( frame, ANIM_SIZE);
+		first_render = 0;
+	}
+  
+	if (first_render){
+		render_first();
+	}
+```
+
 
 ### Example usage:  
 
